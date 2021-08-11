@@ -10,22 +10,23 @@ Operaciones básicas con matrices
 ## Descripciones preliminares
 
 En este proceso se intenta de presentar algunas operaciones básicas de
-algrbra lineal con matrices, siendo ello la primera aproximación para
+algebra lineal con matrices, siendo ello la primera aproximación para
 realizar operaciones matriciales con datos espaciales, ya que estos
-datos como los imagenes de satelite, los modelos digitales de elevacion,
-está compuesta por una estructura rectangular, por ello se intenta
-abordar estos procesos utlizando programas de codigo libre, con el
-proposito de mostrar de manera sencilla las opereciones y sirva de guia
-de aprendizaje para los estudiantes de los programas de ingenieria y
-público interesado, considerando el ambito nacional e internacional.
+datos como: las imagenes de satelite, los modelos digitales de
+elevacion, está compuesta por una estructura rectangular, por ello se
+intenta abordar estos procesos para aproximarnos en el uso de datos
+matriciales, utilizando programas de codigo libre, con el proposito de
+mostrar de manera sencilla las pautas a seguir para realizar opereciones
+basicas y además, sirva de guia de aprendizaje para los estudiantes de
+los programas de ingenieria y público interesado, considerando el ambito
+nacional e internacional.
 
 ## Generando matrices
 
 A continuación se muestran las opreaciones básicas de matrices, tales
 como la suma, la resta, la multiplicación por valores escalares,
 producto de matrices y operaciones de potencia con matrices, utilizando
-R Package. En tal sendido, se presentan algunos procesos de las
-operaciones básicas antes mencionados:
+R Package.
 
 ``` r
 A<- matrix(4:16,nrow = 4,byrow = TRUE)
@@ -114,7 +115,7 @@ m
     ## c   36   24   12    8
     ## d   20    8    4   32
 
-#### multiplicación de matrices
+#### Multiplicación de matrices
 
 ``` r
 M <- A%*%B 
@@ -209,7 +210,7 @@ i
     ## [3,]  0.52688172 -0.4569892 -0.400537634  0.27150538
     ## [4,] -0.09677419  0.1451613 -0.008064516  0.07258065
 
-#### descomposición de la matriz
+#### Descomposición de la matriz
 
 ``` r
 qr(B)
@@ -234,7 +235,7 @@ qr(B)
     ## attr(,"class")
     ## [1] "qr"
 
-#### calculo de la varianza de los datos de la matriz
+#### Calculo de la varianza de los datos de la matriz
 
 ``` r
 var(B)
